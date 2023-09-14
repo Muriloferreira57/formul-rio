@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <script>
+        function validacao(){
+              if(document.getElementById('edtNome').value ==""){
+            alert('O campo nome esta vazio');
+          }
+          if(document.getElementById("edtEndereco").value == ""){
+            alert('O campo endereco esta vazio');
+          }
+          if(document.getElementById("edtBairro").value ==""){
+            alert('O campo bairro esta vazio');
+          }
+          if(document.getElementById("edtCep").value ==""){
+            alert('O campo cep esta vazio');
+          }
+          if(document.getElementById("edtCidade").value ==""){
+            alert('O campo cidade esta vazio');
+           
+          }
+         
+        }
+    </script>
+</head>
+<body>
+    <form name="cadastrar" id="cadastrar" method="POST" action="">
+        Nome: <input type="text" name="edtNome" id="edtNome"><br> <br>
+        Endereço: <input type="text" name="edtEndereco" id="edtEndereco"><br> <br>
+        Bairro: <input type="text" name="edtBairro" id="edtBairro"><br> <br>
+        Cep: <input type="text" name="edtCep" id="edtCep"><br> <br>
+        Cidade: <input type="text" name="edtCidade" id="edtCidade"><br> <br>
+        <input type="button" name="bntCadastrar" value="Cadastrar" onclick="validacao()">
+    </form>
+</body>
+</html>
+
